@@ -1,39 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
-import styles from './App.module.css';
 import { fetchData } from './api';
+import styles from './App.module.css';
 import coronaImage from './images/image.png';
-class App extends React.Component {
 
-  state = {
-    data: {},
-    country: '',
-  }
+const App = () => {
+  const [data, setData] = useState({});
+  const [country, setCountry] = useState('');
 
-  async componentDidMount() {
-    const fetchedData = await fetchData();
-    // console.log(data);
-    this.setState({ data: fetchedData });
-  }
+  const handleDataFetch = async () => {
+    try {
+      const res = await fetchData();
+      setData(res);
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
-  handleCountryChange = async (country) => {
-    const fetchedData = await fetchData(country);
-    // console.log(country);
-    this.setState({ data: fetchedData, country: country });
-  }
+  const handleCountryChange = async (country) => {
+    try {
+      const res = await fetchData(country);
+      setData(res);
+      setCountry(country);
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
-  render() {
-    const {data, country} = this.state;
-    return (
-      <div className={styles.container}>
-        <img src={coronaImage} className={styles.image} alt='COVID-19'/>
-        <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} />
-      </div>
-    );
-  }
-}
+  useEffect(() => {
+    handleDataFetch();
+  }, []);
+
+  return (
+    <div className={styles.container}>
+      <img className={styles.image} src={coronaImage} alt="COVID-19" />
+      <Cards data={data} />
+      <CountryPicker handleCountryChange={handleCountryChange} />
+      <Chart data={data} country={country} />
+    </div>
+  );
+};
+
 export default App;
