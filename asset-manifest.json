@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/covid19-tracker/static/css/main.4e7c2d00.chunk.css",
-    "main.js": "/covid19-tracker/static/js/main.76045956.chunk.js",
-    "main.js.map": "/covid19-tracker/static/js/main.76045956.chunk.js.map",
-    "runtime-main.js": "/covid19-tracker/static/js/runtime-main.ba94defa.js",
-    "runtime-main.js.map": "/covid19-tracker/static/js/runtime-main.ba94defa.js.map",
-    "static/js/2.a217c4e7.chunk.js": "/covid19-tracker/static/js/2.a217c4e7.chunk.js",
-    "static/js/2.a217c4e7.chunk.js.map": "/covid19-tracker/static/js/2.a217c4e7.chunk.js.map",
-    "index.html": "/covid19-tracker/index.html",
-    "static/css/main.4e7c2d00.chunk.css.map": "/covid19-tracker/static/css/main.4e7c2d00.chunk.css.map",
-    "static/js/2.a217c4e7.chunk.js.LICENSE.txt": "/covid19-tracker/static/js/2.a217c4e7.chunk.js.LICENSE.txt",
-    "static/media/image.9e5d4fc7.png": "/covid19-tracker/static/media/image.9e5d4fc7.png",
-    "static/media/spinner.a53ec2da.gif": "/covid19-tracker/static/media/spinner.a53ec2da.gif"
+    "main.css": "/Covid19-Tracker/static/css/main.4e7c2d00.chunk.css",
+    "main.js": "/Covid19-Tracker/static/js/main.76045956.chunk.js",
+    "main.js.map": "/Covid19-Tracker/static/js/main.76045956.chunk.js.map",
+    "runtime-main.js": "/Covid19-Tracker/static/js/runtime-main.267b2245.js",
+    "runtime-main.js.map": "/Covid19-Tracker/static/js/runtime-main.267b2245.js.map",
+    "static/js/2.c26745ab.chunk.js": "/Covid19-Tracker/static/js/2.c26745ab.chunk.js",
+    "static/js/2.c26745ab.chunk.js.map": "/Covid19-Tracker/static/js/2.c26745ab.chunk.js.map",
+    "index.html": "/Covid19-Tracker/index.html",
+    "static/css/main.4e7c2d00.chunk.css.map": "/Covid19-Tracker/static/css/main.4e7c2d00.chunk.css.map",
+    "static/js/2.c26745ab.chunk.js.LICENSE.txt": "/Covid19-Tracker/static/js/2.c26745ab.chunk.js.LICENSE.txt",
+    "static/media/image.9e5d4fc7.png": "/Covid19-Tracker/static/media/image.9e5d4fc7.png",
+    "static/media/spinner.a53ec2da.gif": "/Covid19-Tracker/static/media/spinner.a53ec2da.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba94defa.js",
-    "static/js/2.a217c4e7.chunk.js",
+    "static/js/runtime-main.267b2245.js",
+    "static/js/2.c26745ab.chunk.js",
     "static/css/main.4e7c2d00.chunk.css",
     "static/js/main.76045956.chunk.js"
   ]
